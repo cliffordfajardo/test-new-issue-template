@@ -27,7 +27,10 @@ body:
     id: link
     attributes:
       label: Link to the Stackblitz code example that caused the error
-      description: Stackblitz.com is allows you to share an example of your code. Creating a small reproducible code example of your issue greatly helps our community understand your problem & use case a lot better. Please do not delete the Stackblitz after reporting!
+      description: |
+        Your bug may get fixed much faster if we can run your code and it doesn't have dependencies other than `@antv/graphin`.
+        To create a shareable code example visit Stackblitz (https://stackblitz.com/). Please no localhost URLs.
+        Please read these tips for providing an effective minimal example: https://stackoverflow.com/help/mcve
       placeholder: |
         https://stackblitz.com/... 
     validations:
@@ -35,7 +38,7 @@ body:
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce
+      label: Steps to Reproduce the Bug or Issue
       description: Describe the steps we have to take to reproduce the behavior.
       placeholder: |
         1. Go to '...'
@@ -54,12 +57,15 @@ body:
     validations:
       required: true
   - type: textarea
-    id: screenshots
+    id: screenshots_or_videos
     attributes:
       label: Screenshots or Videos
-      description: If applicable, add screenshots with annotations (png, jpeg or GIF type) or a video file (mp4 or mov type) to help explain your problem. Adding a screenshot or video can dramtically help others in the community understand your situation.
+      description: |
+        If applicable, add screenshots or a video to help explain your problem.
+        For more information on the supported file image/file types and the file size limits, please refer
+        to the following link: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
       placeholder: |
-        You can drag your video or image files inside of here
+        You can drag your video or image files inside of this editor ↓
   - type: textarea
     id: platform
     attributes:
