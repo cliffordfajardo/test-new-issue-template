@@ -1,0 +1,68 @@
+name: "Bug report"
+description: Create a report to help us improve
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue :pray:.
+
+        This issue tracker is for reporting bugs and issues found in Graphin (https://github.com/antvis/Graphin)
+        Before submitting a new bug/issue, please check the the following pages to see if there is a solution or question posted there already:
+         - Graphin Discussion's tab: https://github.com/antvis/Graphin/discussions
+         - Graphin's Issue's tab: https://github.com/antvis/Graphin/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+         - Graphin's closed issues tab: https://github.com/antvis/Graphin/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed
+        
+        The more information you fill in, the better the community can help you.
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: Provide a clear and concise description of the challenge you are running into.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to the Stackblitz or codesandbox that caused the error
+      description: Stackblitz.com and codesanbox.io are tools that allow you to share an example of your code.  Creating a small reproducible code example of your issue greatly helps our community understand your problem & use case a lot better and more easily. Please do not delete the Stackblitz or codesanbox after reporting!
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe the steps we have to take to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Provide a clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Videos
+      description: If applicable, add screenshots with annotations (png, jpeg or GIF type) or a video file (mp4 or mov type) to help explain your problem. Adding a screenshot or video can dramtically help others in the community understand your situation.
+  - type: textarea
+    id: platform
+    attributes:
+      label: Platform
+      value: |
+        - OS: [e.g. macOS, Windows, Linux]
+        - Browser: [e.g. Chrome, Safari, Firefox]
+        - Version: [e.g. 91.1]
+    validations:
+        required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
