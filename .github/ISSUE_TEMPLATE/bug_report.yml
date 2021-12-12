@@ -46,6 +46,8 @@ body:
     attributes:
       label: Expected behavior
       description: Provide a clear and concise description of what you expected to happen.
+      placeholder: |
+        As a user, I expected ___ behavior but i am seeing ___
     validations:
       required: true
   - type: textarea
@@ -53,6 +55,8 @@ body:
     attributes:
       label: Screenshots or Videos
       description: If applicable, add screenshots with annotations (png, jpeg or GIF type) or a video file (mp4 or mov type) to help explain your problem. Adding a screenshot or video can dramtically help others in the community understand your situation.
+      placeholder: |
+        You can drag your video or image files inside of here
   - type: textarea
     id: platform
     attributes:
