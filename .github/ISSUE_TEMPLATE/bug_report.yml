@@ -26,13 +26,15 @@ body:
   - type: input
     id: link
     attributes:
-      label: Link to the Stackblitz code example that caused the error
+      label: Your Example Website or App
       description: |
-        Your bug may get fixed much faster if we can run your code and it doesn't have dependencies other than `@antv/graphin`.
-        To create a shareable code example visit Stackblitz (https://stackblitz.com/). Please no localhost URLs.
-        Please read these tips for providing an effective minimal example: https://stackoverflow.com/help/mcve
+        Which website or app were you using when the bug happened?
+        Note:
+        - Your bug will may get fixed much faster if we can run your code and it doesn't have dependencies other than the G6 npm package.
+        - To create a shareable code example you can use Stackblitz (https://stackblitz.com/) or CodeSandbox (https://codesandbox.io/s/new). Please no localhost URLs.
+        - Please read these tips for providing a minimal example: https://stackoverflow.com/help/mcve.
       placeholder: |
-        https://stackblitz.com/... 
+        e.g. Stackblitz, Code Sandbox app url
     validations:
       required: true
   - type: textarea
